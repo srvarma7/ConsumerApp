@@ -6,11 +6,25 @@
 //
 
 import SwiftUI
+import SwiftUICanvasLibrary
 
 struct ContentView: View {
+    
+    @State var isGrown: Bool = false
+    @State var isSwitchOn: Bool = false
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            Text("Hello, world!")
+                .padding()
+            
+            GrowButton(isSelected: $isGrown)
+                .padding()
+            
+            SwitchButton(isSelected: $isSwitchOn)
+                .padding()
+        }
+        
     }
 }
 

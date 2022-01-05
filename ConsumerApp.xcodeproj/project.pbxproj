@@ -13,6 +13,7 @@
 		E5CBC5ED27860F5300625E60 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CBC5DB27860F5300625E60 /* ContentView.swift */; };
 		E5CBC5EE27860F5300625E60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5CBC5DC27860F5300625E60 /* Assets.xcassets */; };
 		E5CBC5EF27860F5300625E60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5CBC5DC27860F5300625E60 /* Assets.xcassets */; };
+		E5CBC5FA27860FB300625E60 /* SwiftUICanvasLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = E5CBC5F927860FB300625E60 /* SwiftUICanvasLibrary */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5CBC5FA27860FB300625E60 /* SwiftUICanvasLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +96,9 @@
 			dependencies = (
 			);
 			name = "ConsumerApp (iOS)";
+			packageProductDependencies = (
+				E5CBC5F927860FB300625E60 /* SwiftUICanvasLibrary */,
+			);
 			productName = "ConsumerApp (iOS)";
 			productReference = E5CBC5E127860F5300625E60 /* ConsumerApp.app */;
 			productType = "com.apple.product-type.application";
@@ -142,6 +147,9 @@
 				Base,
 			);
 			mainGroup = E5CBC5D427860F5200625E60;
+			packageReferences = (
+				E5CBC5F827860FB300625E60 /* XCRemoteSwiftPackageReference "SwiftUICanvasLibrary" */,
+			);
 			productRefGroup = E5CBC5E227860F5300625E60 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -452,6 +460,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E5CBC5F827860FB300625E60 /* XCRemoteSwiftPackageReference "SwiftUICanvasLibrary" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/srvarma7/SwiftUICanvasLibrary.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E5CBC5F927860FB300625E60 /* SwiftUICanvasLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E5CBC5F827860FB300625E60 /* XCRemoteSwiftPackageReference "SwiftUICanvasLibrary" */;
+			productName = SwiftUICanvasLibrary;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E5CBC5D527860F5200625E60 /* Project object */;
 }
